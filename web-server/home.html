@@ -6,29 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <title>Book Management</title>
 </head>
 
 <body>
-    <h1 class="heading">Book Management</h1>
+    <header>
+        <h1>Book Management</h1>
+    </header>
     <div class="container">
         <form action="#">
-            <label for="fname">Book name</label>
-            <input type="text" id="fname" name="name" placeholder="Book name...">
-            <label for="lname">Page Count</label>
-            <input type="number" id="lname" name="page-count" placeholder="Page count...">
-            <label for="country">Author</label>
+            <label for="fname">Book Name:</label>
+            <input type="text" id="fname" name="name" placeholder="Enter book name...">
+            <label for="lname">Page Count:</label>
+            <input type="number" id="lname" name="page-count" placeholder="Enter page count...">
+            <label for="author">Author:</label>
             <select id="author" name="author"></select>
-            <label for="category">Category</label>
+            <label for="category">Category:</label>
             <select id="category" name="category"></select>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Add Book">
         </form>
     </div>
-    <table id="book-block"></table>
     <div class="popup" id="popup">
         <span class="close" onclick="closePopup()">&times;</span>
         Book added successfully!
     </div>
+    <table id="book-block"></table>
     <script src="./callAPI.js"></script>
 </body>
 
